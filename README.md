@@ -1,0 +1,7 @@
+# textgpt
+
+```
+pip install .
+```
+
+# ex
