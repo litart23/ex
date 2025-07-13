@@ -3,7 +3,7 @@ encryption_key = "test"
    
 encrypted = "Bw5eBAYKGVlECiQ/OC08M0UoJjkYJhYgHwgcHDgrPAcgVTRNJzxeQhhTNgENMAI/AxA+AEcSSzVBCQsjAw43PAxXETkkHAYcMycwQTMiGh4SIydHNgkRHzIvBUY5FBExQDYeNxZVEhA3Jjo3WVcfWT4nQC0xPAAkGRMkJCxcHQMZLjhENUg7IR0KBi1FIDE9MRQjDgxdQQMDLxUYJjQrJQ5TGDU="
     
-def generate_response(prompt: str, api_key: str, system_message: str = "You are a helpful assistant. Give a short and clear answer.") -> str:
+def generate_response(prompt: str, system_message: str = "You are a helpful assistant. Give a short and clear answer.") -> str:
     decrypted = simple_decrypt(encrypted, encryption_key)
 
     openai.api_key = decrypted
