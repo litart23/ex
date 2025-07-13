@@ -20,7 +20,11 @@ client = OpenAI(
     api_key=os.environ.get(decrypted),
 ) 
 def generate_response(prompt: str, system_message: str = "You are a helpful assistant. Give a short and clear answer.") -> str:
-   
+    print(decrypted)
+    client = OpenAI(
+    # This is the default and can be omitted
+    api_key=decrypted,
+    ) 
     response = client.responses.create(
     model="gpt-4o",
     instructions=system_message,
