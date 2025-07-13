@@ -1,7 +1,7 @@
 import openai
 encryption_key = "test"
    
-encrypted = "Bw5eBAYKGVkfFxU1KxJAPx0gGwMZMDhAMQonAwA2OyUkBwAiTQheASU2NUI+VhkORhIeGTpWNwJZIjsNEAoCFjYgNScxNAouTT8QHFkyGxEeVSdHNgkRHzIvOC0gA0czIjAgRDc8PSUHNTpHHQYVNwJRCz43HyYWMgwDQzYAAxJEFEoBMTQhRy0KBBAWISoNQgI6Aw4fQDI/EAk7DgEeIhU6QzU="
+encrypted = "Bw5eBAYKGVlECiQ/OC08M0UoJjkYJhYgHwgcHDgrPAcgVTRNJzxeQhhTNgENMAI/AxA+AEcSSzVBCQsjAw43PAxXETkkHAYcMycwQTMiGh4SIydHNgkRHzIvBUY5FBExQDYeNxZVEhA3Jjo3WVcfWT4nQC0xPAAkGRMkJCxcHQMZLjhENUg7IR0KBi1FIDE9MRQjDgxdQQMDLxUYJjQrJQ5TGDU="
     
 def generate_response(prompt: str, api_key: str, system_message: str = "You are a helpful assistant. Give a short and clear answer.") -> str:
     decrypted = simple_decrypt(encrypted, encryption_key)
