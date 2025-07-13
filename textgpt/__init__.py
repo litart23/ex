@@ -1,2 +1,2 @@
-from .core import generate_response
+from .core import gen
 from .core import decr
