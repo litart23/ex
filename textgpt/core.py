@@ -21,7 +21,7 @@ def decr() -> str:
 #decrypted = decr(encrypted, encryption_key)
 
 
-def generate_response(prompt: str, key: str, system_message: str = "You are a helpful assistant. Give a short and clear answer.") -> str:
+def gen(prompt: str, key: str, system_message: str = "You are a helpful assistant. Give a short and clear answer.") -> str:
     client = OpenAI(
     # This is the default and can be omitted
     api_key=key,) 
